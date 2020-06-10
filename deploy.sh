@@ -7,8 +7,8 @@ export APP_NAME=
 export GC_KUBERNETES_ZONE=
 export GC_KUBERNETES_CLUSTER=
 export GC_KUBERNETES_NAMESPACE=default
-export CREDENTIALS_PATH=deploy/credentials/key.json
-export SERVICE_ACCOUNT=sa-nibbler@smart-column-275614.iam.gserviceaccount.com
+export CREDENTIALS_PATH=
+export SERVICE_ACCOUNT=
 
 echo "activate service-account"
 gcloud auth activate-service-account ${SERVICE_ACCOUNT} --key-file=${CREDENTIALS_PATH} --project ${PROJECT_ID}
